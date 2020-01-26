@@ -1,0 +1,142 @@
+.register
+    background-color: $vanilla
+    height: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+    &__title
+        font-size: 30px
+        margin-bottom: 4vh
+        margin-top: 4vh
+        font-variant: small-caps
+    
+    &__intro
+        font-size: 18px
+
+.line
+    border-bottom: solid 1px $darkgreen
+    width: 86%
+
+.register-form
+    width: 100vw
+    height: 98%
+    padding: 5%
+    display: flex
+    flex-direction: column
+    align-items: center  
+
+    &__email
+        font-size: 20px
+        border: none
+        border-bottom: 2px solid white
+        background: url("https://cdn5.dibujos.net/dibujos/pintar/sobre_2.png") no-repeat scroll 5px 5px
+        background-size: 1.5rem
+        padding-left: 37px
+        margin-bottom: 6%
+
+        &:focus
+            border: 1px solid $darkgreen
+
+    &__password
+        font-size: 20px
+        border: none
+        border-bottom: 2px solid white
+        background: url("http://simpleicon.com/wp-content/uploads/key-4.png") no-repeat scroll 5px 5px
+        background-size: 1.2rem
+        padding-left: 30px
+        margin-bottom: 6%
+
+        &:focus
+            border: 1px solid $darkgreen
+
+    &__username
+        font-size: 20px
+        margin-top: 9%
+        border: none
+        border-bottom: 2px solid white
+        background: url("/images/user.png") no-repeat scroll 5px 5px
+        background-size: 1.2rem
+        padding-left: 30px
+        margin-bottom: 6%
+
+        &:focus
+            border: 1px solid $darkgreen
+
+    &__location
+        font-size: 20px
+        border: none
+        border-bottom: 2px solid white
+        background-size: 1.2rem
+        padding-left: 30px
+        margin-bottom: 6%
+
+    &__submit
+        
+        margin: 1rem
+        font-size: 18px
+        border: 1.8px solid $darkgreen
+        padding: .4rem
+        border-radius: 6%
+
+        &:hover
+            cursor: pointer
+
+    &__option
+        margin-left: 17px
+        margin-right: 8px
+    
+.go-back
+    text-decoration: none
+    color: #036158
+    align-self: center
+    margin: .8rem
+    font-size: 18px
+    border-bottom: 1.8px solid $darkgreen
+    padding: .4rem
+    border-radius: 6%
+
+.items-container
+    background: #7955482b
+    paddin: 10%
+    padding: 10%
+    display: block
+    border-radius: 2%
+    width: 80vw
+
+
+.checkbox-container
+    display: grid
+    gap: .5rem
+    grid-template-columns: 1fr 1fr
+
+.checking-container
+    margin: 2%
+    padding: 8%
+.single-container
+    padding-top: 1.2rem
+.group-container
+    padding-top: 1.2rem
+.type-groups, .type-single
+    display: none
+#type-groups:checked ~ .type-groups
+    display: block
+    margin-top: 1.8rem
+#type-single:checked ~ .type-single
+    display: block
+    margin-top: 1.8rem
+.instructions
+    font-size: 18px
+    text-align: center
+    font-weight: bold
+    margin-bottom: 25px
+    margin-top: 25px
+
+select
+    border: 1px solid black
+    border-radius: 7px
+    width: 68vw
+    height: 1.8rem
+    background: floralwhite
+    font-size: 16px
